@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_editpelajaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pelajaran"/>
+        <EditText
+            android:id="@+id/et_edittopik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Topik"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_editwaktudeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="hh:mm"/>
+
+            <EditText
+                android:id="@+id/et_edittanggaldeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="dd-mm-yyy"/>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_editkategoritugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/et_editcatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Catatan"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+                <Button
+                    android:id="@+id/btn_editkembali"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali"></Button>
+                <Button
+                    android:id="@+id/btn_editsimpan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"></Button>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

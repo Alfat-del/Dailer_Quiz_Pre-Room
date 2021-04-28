@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TugasBaruActivity">
+
+    <TextView
+        android:id="@+id/tv_tugas_baru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tugas Baru"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_barupelajaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pelajaran"/>
+        <EditText
+            android:id="@+id/et_barutopik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Topik"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_baruwaktudeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="hh:mm"/>
+
+            <EditText
+                android:id="@+id/et_barutanggaldeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="dd-mm-yyyy"/>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_barukategoritugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:id="@+id/et_barucatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Catatan"/>
+
+
+        <Button
+            android:id="@+id/btn_barutambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:layout_marginTop="50dp"></Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
